@@ -15,7 +15,7 @@ $(document).ready(function () {
 		$('.ryu-throwing').show();
 		// show hadouken and animate it to the right side of the screen
 		$('.hadouken').finish().show().animate(
-			{'left': '1100px'},
+			{'left': '1200px'},
 			650,
 			function() {
 				$(this).hide();
@@ -41,14 +41,25 @@ function playHadouken () {
 		$('.ryu-still').hide();
 		$('.ryu-throwing').hide();
 		$('.ryu-cool').show();
+		playMustard();
     }
 });
 
 $(document).keyup(function(e){
     if (e.which == 88) { 
    		$('.ryu-ready').show();
-		$('.ryu-still').show();
-		$('.ryu-throwing').show();
 		$('.ryu-cool').hide();
     }
 });
+
+function playMustard () {
+	$('#mustard')[0].volume = 0.5;
+	$('#mustard')[0].play();
+}
+
+$(document).ready(function() {
+    $("#ryu-theme").get(0).play();
+    $('#ryu-theme')[0].volume = 0.3;
+});
+
+

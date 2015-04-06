@@ -10,6 +10,19 @@ body {
 	position: relative;
 	z-index: 1;
 }
+#sf-logo {
+	background-image: url('../images/sf-logo.jpg');
+	background-repeat: no-repeat;
+	padding-right: 400px;
+	height: 400px;
+	position: relative;
+	float: right;
+	-moz-background-size: 80% 80%;
+    -o-background-size: 80% 80%;
+    -webkit-background-size: 80% 80%; 
+    background-size: 80% 80%;
+}
+
 .ryu {
 	float: left;
 	width: 659px;
@@ -50,3 +63,24 @@ body {
 	float: left;
 }
 
+.how-to p {
+	width: 50%;
+	font-size: 24px;
+	line-height: 45px;
+	margin-left: 350px;
+	position: absolute;
+}
+.how-to p + p {
+	margin-left: 275px; 
+	top: 80px;
+	max-width: 300px;
+	left: 300px;
+}
+p {
+	font-family: myFirstFont;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url("../font/Super Webcomic Bros. Bold.ttf");
+}
