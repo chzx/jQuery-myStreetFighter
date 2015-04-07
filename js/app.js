@@ -61,5 +61,3 @@ $(document).ready(function() {
     $("#ryu-theme").get(0).play();
     $('#ryu-theme')[0].volume = 0.3;
 });
-
-
